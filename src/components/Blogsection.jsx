@@ -1,4 +1,4 @@
-import { blogItems } from "../constants"
+import { blogItems } from "../constants/BlogPosts"
 
 const Blogsection = () => {
   return (

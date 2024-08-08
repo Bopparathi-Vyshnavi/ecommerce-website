@@ -17,7 +17,7 @@ const Login = () => {
         </form>
         <div className="flex flex-row p-3 gap-1">
           <h2 className="text-md text-slate-500">Don't have an account? </h2>
-          <a href="" className="text-md text-blue-500">Sign up</a>
+          <a href='/signin' className="text-md text-blue-500">Sign up</a>
         </div>
       </div>
     </div>

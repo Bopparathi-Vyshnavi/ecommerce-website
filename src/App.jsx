@@ -10,6 +10,7 @@ import Contactus from './pages/Contactus'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Login from './pages/Login'
+import Signin from './pages/Signin'
 
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
           </Route>
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/' />
+          <Route path='/signin' element={<Signin />} />
         </Routes>
         <Footer />
       </BrowserRouter>

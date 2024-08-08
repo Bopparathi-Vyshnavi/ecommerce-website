@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
   content: [
     "./index.html",
@@ -8,9 +7,12 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'about-image': "url('../assets/Images/about-img1.jpg')",
+        'about-image': "url('src/assets/Images/about-img1.jpg)",
+        'contimg': "url('src/assets/Images/contact-img.webp')",
       }
+
     },
   },
   plugins: [],
+  
 }

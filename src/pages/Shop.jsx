@@ -1,4 +1,4 @@
-import { shopproducts } from "../constants"
+import { shopproducts } from "../constants/AllProducts"
 import { Link } from "react-router-dom"
 import slide from "../assets/Images/shop-img.jpg"
 
@@ -13,10 +13,9 @@ const Shop = () => {
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {shopproducts.map((product) => (
-            <Link to={'/product'} key={product.id}  className="group text-center">
+            <Link to={`/product/${product.id}`} className="group text-center">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
-                  alt={product.imageAlt}
                   src={product.imageSrc}
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
